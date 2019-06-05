@@ -1,40 +1,276 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <title>Patrick Stival Chaerke</title>
-    <link rel = "stylesheet" type = "text/css" href = "style/index.css">
-    <script type="text/javascript" src="script/index.js">
+    <meta charset="utf-8">
+    <title>Gatinhos Fofos</title>
+    <link rel="shortcut icon" href="img/gatoBorda.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style/gatinhosFofos.css">
+    <script type="text/javascript" src="script/jquery.js">
+    </script>
+    <script type="text/javascript" src="script/gatinhosFofos.js">
+    </script>
+    <script type="text/javascript" src="script/QTransform.js">
 
     </script>
+
   </head>
+  <body class="tecido">
+    <header class="almofadado">
+      <h1 id="titulo">Gatinhos Fofos</h1>
+    </header>
+    <img src="img/pretinho.jpg" alt="um gatinho com dente" id="dentinho">
+    <div id="conteudo" class="tecido">
+      <nav id="navNavegacao" class="almofadado">
+        <h2>Navegação</h2>
+        <ul>
+          <li><span class="spanLink" id="surpresa">Surpresa!</span></li>
+        </ul>
+        <ul id="menuHtml" class="menuDeTroca">
+          <li><a href="#boxSpan">span</a></li>
+          <li><a href="#boxTable">table</a></li>
+          <li><a href="#boxNav">nav</a></li>
+          <li><a href="#boxTime">time</a></li>
+          <li><a href="#boxQ">q</a></li>
+          <li><a href="#boxArticle">article</a></li>
+          <li><a href="#boxIframe">iframe</a></li>
+          <li><a href="#boxAddress">address</a></li>
+          <li><a href="#boxProgress">progress</a></li>
+          <li><a href="#boxMap">map</a></li>
+          <li><a href="#boxMark">mark</a></li>
+          <li><a href="#boxEmbed">embed</a></li>
+          <li><a href="#boxDl">dl, dt e dd</a></li>
+          <li><a href="#boxQuote">blockquote</a></li>
+          <li><a href="#boxColGroup">colgroup</a></li>
+        </ul>
+        <ul id="menuCss" class="menuDeTroca">
+          <li><a href="#boxBorderRadius">border-radius</a></li>
+          <li><a href="#boxBoxShadow">box-shadow</a></li>
+        </ul>
+        <input type="button" value="Trocar Menu" id="btnTroca">
+      </nav>
 
-  <body>
-<div id="header">
+    <section id="tags" class="almofadado">
+        <h1>HTML:</h1>
 
-      <h1 id="titulo" onclick="cliqueTeste()">Vagas de Emprego</h1>
+        <br>
 
-</div>
+        <h3 name="boxSpan">span</h3>
+        <section class="boxExplicacaoTag" id="boxSpan" >
 
-<div id="content">
+          <p>A tag span é uma tag genérica para elementos inline, ou seja, <br>não surte efeito direto no comportamento do elemento.</p>
+          <p>Exemplo:</p>
+          <span id="spanExemplo">Eu sou um span</span>
+        </section>
+        <h3 name="boxTable">table</h3>
+        <section class="boxExplicacaoTag" id="boxTable" >
+          <p>A tag table tem a função de criar tabelas no documento HTML.</p>
+          <p>Ela pode conter elementos filhos que ajudam em sua formatação, sendo estes:</p>
+          <ul>
+            <li>thead</li>
+            <li>tbody</li>
+            <li>tr</li>
+            <li>th</li>
+            <li>td</li>
+          </ul>
+          <p>O thead define um cabeçalho, ou um título para a tabela. O tbody indica o início do corpo da tabela, funcionando como <br>
+            um elemento em bloco que o agrupa. O tr define uma linha da tabela, podendo estar dentro dele tanto o td, quanto o th.<br>
+            O th indica uma coluna agrupada ao thead para (o th é posto dentro do thead), formando uma célula no cabeçalho. O td representa
+            a junção linha-coluna agrupada ao tr (o td é posto dentro do tr).
+          </p>
+          <p>Exemplo:</p>
+          <table id="tabelaEx">
+            <thead>
+              <th colspan="2">Eu sou um th</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Eu sou um td</td>
+                <td>Eu sou outro td</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-    <div id="divLista">
-      <h2>Lista de Vagas:</h2>
-      <br>
-      <ul>
-        <li><a href="https://xjobs.brassring.com/tgwebhost/jobdetails.aspx?partnerid=25329&siteid=5197&jobid=318542">Texas Instruments - Applications Engineer</a></li>
-        <li><a href="http://www.infojobs.com.br/vaga-de-programador-php-em-parana__5283156.aspx">EXECUTIVA OUTSOURCING - Programador PHP</a></li>
-        <li><a href="http://www.infojobs.com.br/vaga-de-analista-ti-tecnologia-da-informacao-em-parana__5309692.aspx">CLIPTIME SERVICOS DE INFORMACAO LTDA - Analista</a></li>
-        <li><a href="http://www.infojobs.com.br/vaga-de-analista-suporte-ti-em-parana__5343172.aspx">Direct Talk - Analista</a></li>
-        <li><a href="https://xjobs.brassring.com/tgwebhost/jobdetails.aspx?partnerid=25329&siteid=5197&jobid=352414">Texas Instruments - Software Engineer</a></li>
-        <li><a href="http://jobview.monster.com/sr-software-engineer-lead-software-engineer-device-job-kansas-city-mo-us-179755865.aspx?mescoid=1500127001001&jobPosition=1">Apex Systems - Software Engineer</a></li>
-      </ul>
+        <h3 id="boxNav">nav</h3>
+        <section class="boxExplicacaoTag" >
+          <p>A tag nav foi adicionada no HTML 5 para representar uma section de navegação. Um exemplo de nav é o próprio menu chamado
+          Navegação deste site.</p>
+        </section>
+
+        <h3 id="boxTime">time</h3>
+        <section class="boxExplicacaoTag" >
+          <p>A tag time representa uma unidade de tempo do calendário gregoriano.<br>Exemplo:</p>
+          <time datetime="2017-02-14 10:40">14/02/2017 10:40</time>
+          <p>Esta tag não apresena nenhum conteúdo em especial, mas surte efeito quando se trata de SEO.</p>
+        </section>
+
+        <h3 id="boxQ">q</h3>
+        <section class="boxExplicacaoTag" >
+          <p>A tag q representa uma citação, muito importante também para SEO.</p>
+          <p>Exemplo:<br> <q cite="http://gshow.globo.com/receitas-gshow/receita/pao-caseiro-da-neia-55ee98c84d3885377400004a.html">
+            Coloque em forma untada só com farinha de trigo, e coloque para assar em forno sem pré-aquecer, porque se o forno for frio cresce mais.
+          </q></p>
+        </section>
+
+        <h3 id="boxArticle">article</h3>
+        <section class="boxExplicacaoTag">
+          <p>A tag article representa um conteúdo que deve fazer sentido por si próprio que seja original da página em que ele está inserido.</p>
+          <p>Exemplo:</p>
+          <article>
+            <h4>Eu sou um h4 do article!</h4>
+            <br>
+            Eu sou um conteúdo do article!
+          </article>
+        </section>
+
+        <h3 id="boxIframe">iframe</h3>
+        <section class = "boxExplicacaoTag" id="boxIFrame">
+          <p>A tag iframe é responsável por adicionar conteúdo de outras páginas de forma dinâmica.
+              ela é muito utilizada para exibir propagandas do google adwords e para players de vídeo externos.
+          </p>
+          <p>Exemplos:</p>
+          <ul id="listaIframes">
+            <li>  <iframe id="iframeCafe" src="https://www.youtube.com/embed/17hi7LdOopE" frameborder="10" allowfullscreen>Sem acesso ao iframe!</iframe></li>
+            <li>  <iframe id="iframePao" src="http://produto.mercadolivre.com.br/MLB-751836001-forno-de-assar-po-ita-turbo-900-painel-manual-vapor-_JM"></iframe></li>
+          </ul>
+
+
+        </section>
+
+        <h3 id="boxAddress">address</h3>
+        <section class="boxExplicacaoTag">
+          <p>A tag address é muito importante para SEO também, e define um escopo que referencia outra página web.
+            Sua função é dar os devidos créditos a autores referenciados na página em que está sendo usada, e por padrão
+            apresenta o texto em itálico.
+          </p>
+          <p>Exemplo:</p>
+          <address>
+            Escrito por: Patrick Stival, no site dos <a href="gatinhosFofos.html">Gatinhos Fofos.</a>
+          </address>
+
+        </section>
+
+        <h3 id="boxProgress">progress</h3>
+        <section class="boxExplicacaoTag">
+          <p>A tag progress exibe uma barra de progresso. Pode ser útil para recursos poderosíssimos como o localstorage.</p>
+          <progress id="progressoAnimado" value="0" max="100">0%</progress>
+        </section>
+
+        <h3 id="boxMap">map</h3>
+        <section class="boxExplicacaoTag">
+          <p>A tag map funciona como um mapa numa imagem, que cria segmentações nela. Para definir os segmentos, utiliza-se a tag area</p>
+          <p>Exemplo (aperte os botões do mouse):</p>
+          <img src="img/mouse.jpg" alt="Uma imagem de um mouse." usemap="mapaMouse">
+          <map name="mapaMouse">
+             <area shape="poly" onclick="cliqueDireitoMap()" coords="252,45,266,50,271,62,273,77,274,92,273,113,272,146,268,171,277,174,296,175,316,174,327,174,334,139,332,98,326,63,313,40,285,31,254,28" />
+             <area shape="poly" onclick="cliqueEsquerdoMap()" coords="250,28,250,43,227,56,226,96,229,149,231,173,204,175,168,173,167,116,172,79,177,53,189,39,216,30,236,26" />
+          </map>
+        </section>
+
+        <h3 id="boxMark">mark</h3>
+        <section class="boxExplicacaoTag">
+          <p>A tag mark funciona como se fosse uma caneta marca-textos, ou seja, apenas enfatiza um texto. </p>
+          <p>Eu tenho um <mark>mark</mark>!</p>
+          <p>O mesmo efeito pode ser atingido utilizando um <span id="spanMark">span</span> estilizado, mas a tag mark possui significado semântico
+            para os mecanismos de busca Web.
+          </p>
+        </section>
+
+        <h3 id="boxEmbed">embed</h3>
+        <section class="boxExplicacaoTag">
+          <p>A tag embed tem como função adicionar conteúdos externos não html, como um plugin flash ou java.</p>
+          <p>Exemplo:</p>
+          <br>
+          <embed src="embed/flash/anima.swf" width="700" height="300">
+        </section>
+
+        <h3 id="boxDl">dl, dt e dd</h3>
+        <section class="boxExplicacaoTag">
+          <p>As tags dl, dt e dd agem em conjunto, pois definem uma lista, definida pelo dl, com
+             cada elemento num dt e suas descrições no dl.
+          </p>
+          <p>Exemplo:</p>
+
+          <dl>
+            <dt>Eu sou um dt</dt>
+            <dd>Eu sou um dd (sou descritivo).</dd>
+          </dl>
+        </section>
+
+        <h3 id="boxQuote">blockquote</h3>
+        <section class="boxExplicacaoTag">
+          <p>A tag blockquote representa uma citação longa de outra fonte. Mesmo não alterando visualmente a página, é importante em
+            ferramentas de busca.
+          </p>
+          <br>
+          <p>Exemplo:</p>
+          <br>
+          <blockquote cite="http://www.minhavida.com.br/alimentacao/tudo-sobre/17491-cafe-ajuda-a-emagrecer-e-tem-efeito-antioxidante">
+            O consumo moderado do café proporciona uma série de benefícios para a saúde.
+             A bebida tem um efeito termogênico e por isso ajuda na perda de peso.
+              Ela também tem ação estimulante e auxilia a diminuir dores de cabeça.
+          </blockquote>
+        </section>
+
+        <h3 id="boxColGroup">colgroup</h3>
+        <section class="boxExplicacaoTag">
+          <p>A tag colgroup define uma formatação dentro de uma tabela,
+             sendo útil para estilização de colunas inteiras por um único seletor css.</p>
+          <br>
+          <p>Exemplo:</p>
+          <br>
+
+          <table>
+            <colgroup >
+              <col span="1" id="col">
+            </colgroup>
+            <tr>
+              <th>lalalala</th>
+              <th>lolololo</th>
+            </tr>
+            <tr>
+              <th>lelelele</th>
+              <th>lililili</th>
+            </tr>
+          </table>
+
+        </section>
+
+        <h1>CSS</h1>
+        <br><br>
+        <h3 id="boxBorderRadius">border-radius</h3>
+        <section class="boxExplicacaoTag">
+          <p>A propriedade CSS border-radius tem como finalidade definir um raio para a borda de um componente html,
+            fazendo com que quanto maior o valor, mais arredondadas fiquem as bordas.
+          </p>
+          <br>
+          <p>Exemplos:</p>
+          <br>
+          <div class="divExemploBorderRadius">
+            Eu sou uma div sem border Radius
+          </div>
+          <div class="divExemploBorderRadius" id="border-radiusTrinta">
+            Eu sou uma div com border-radius de 30px
+          </div>
+          <div class="divExemploBorderRadius" id="border-radiusCinquenta">
+            Eu sou uma div com border-radius de 50px
+          </div>
+        </section>
+
+        <h3 id="boxBoxShadow">box-shadow</h3>
+        <section class="boxExplicacaoTag">
+          <p>A função do box-shadow é adicionar uma sombra para o elemento a ser tratado. <br>Exemplo:</p>
+          <div class="boxShadowDiv">
+            Eu sou uma div com box-shadow;
+          </div>
+        </section>
+
+
+    </section>
+    <section id="css" class="almofadado">
+      <h1>CSS</h1>
+
+    </section>
     </div>
-
-</div>
-
-
-
-
-
-</body>
+  </body>
 </html>

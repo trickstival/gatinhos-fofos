@@ -1,0 +1,365 @@
+*{
+  margin:0px;
+}
+body{
+  min-width: 300px;
+  min-height: 300px;
+}
+header{
+  text-align: center;
+  padding-top: 1%;
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  border-bottom: solid 1px #F11A0D;
+  z-index: 1;
+  min-width: 500px;
+  transition: top 5s ease-in-out;
+
+}
+
+.headerUp{
+ top:-8%;
+}
+
+
+input{
+  width: 100px;
+}
+
+dl{
+  width: 50%;
+  padding-left: 25%;
+}
+
+dd{
+  text-align: right;
+}
+
+input#btnTroca{
+  margin-top: 10px;
+  position: relative;
+  margin-right: 10px;
+}
+
+
+.boxShadowDiv{
+  box-shadow: 5px 5px 10px #111111;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: grey;
+  left:50%;
+  margin-left: -100px;
+  margin-top:25px;
+  margin-bottom: 25px;
+
+  clear: both;
+}
+
+
+
+
+
+col#col{
+  background-color: green;
+}
+
+span#spanMark{
+
+  background-color: yellow;
+}
+
+ul#menuCss{
+  display: none;
+}
+
+.animaTroca{
+
+
+}
+
+table#tabelaEx, table#tabelaEx th, td{
+  background-color: #FFFFFF;
+  border: 1px solid;
+  padding: 5px;
+
+}
+
+ul#listaIframes{
+  list-style: none;
+}
+
+iframe#iframeCafe, #iframePao{
+  width:60%;
+  height:300px;
+  left:50%;
+  margin-left: -25%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+@keyframes animacaoTitulo {
+  0% {color: blue;
+    text-shadow: blue 4px 4px 10px;
+    height: 120%;
+
+  }
+  25% {color: yellow;
+    transform: skewX(45deg);
+    text-shadow: yellow 4px 4px 10px;
+
+  }
+  50%{color:green;
+      text-shadow: green 4px 4px 10px;
+      height: 10%;
+
+  }
+  75%{color:white;
+      transform: skewX(-45deg);
+      text-shadow: white 4px 4px 10px;
+  }
+  100%{color:blue;
+    text-shadow: blue 4px 4px 10px;
+    height: 120%;
+
+}
+}
+
+header h1{
+  font-family: Verdana, Arial;
+  color:#712C28;
+  letter-spacing: 6px;
+  animation-name: animacaoTitulo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes animacaoGatinhoAnimado {
+  0%{}
+  2%{    transform: scale(2.0);}
+  25%{
+    transform: translate(50%, 70%);
+
+  }
+  30%{
+    transform: translate(65%, 90%);
+    transform: rotate(45deg);
+  }
+  50%{transform: translate(200%, 60%);
+      opacity: 1.0;
+  }
+  70%{transform: translateY(200px);
+      transform: rotate(-124deg);
+  }
+  100%{transform: translateY(0px);
+        opacity: 0;
+  }
+}
+
+
+.gatinhoAnimado{
+  opacity: 1;
+    animation-name: animacaoGatinhoAnimado;
+    animation-duration: 6s;
+
+}
+
+#dentinho{
+  position: fixed;
+  z-index: 1;
+  border-radius: 100%;
+}
+
+div#conteudo{
+  position: absolute;
+  margin-top:8%;
+  width: 100%;
+
+}
+
+section#tags{
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left:-25%;
+  padding: 10px;
+  border: 2px outset #C7F8F7;
+  border-radius: 10px;
+  min-width: 400px;
+  box-shadow: 3px 2px 3px #222222;
+
+
+}
+
+.tecido{
+  background-color:white;
+  background-image: linear-gradient(90deg, hsla(0, 100%, 18%, .5) 50%, transparent 50%),
+  linear-gradient(hsla(0, 100%, 18%, .5) 50%, transparent 50%);
+  background-size:50px 50px;
+}
+
+.almofadado{
+  background:
+radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+background-color: #300;
+background-size: 100px 100px;
+}
+
+section#css{
+  display: none;
+}
+
+section#tags h3, section#css h3{
+  color:white;
+}
+
+section#tags, section#css h1{
+  text-align: center;
+  color:white;
+  font-family: Verdana, Arial;
+
+}
+
+span#spanExemplo{
+  color:white;
+  font-family: Verdana;
+  text-shadow: blue 4px 4px 10px;
+
+}
+
+section.boxExplicacaoTag{
+  background-color: rgba(255, 255, 255, .55);
+  border: 1px solid #BEA9F8;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Verdana, Arial;
+  font-size: 18px;
+  color:black;
+}
+
+
+nav#navNavegacao{
+  position:fixed;
+  margin-left: 5%;
+  width:15%;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 3px 2px 3px #222222;
+  border:3px solid;
+  border-color: #DDDDDD;
+  border-left-color: red;
+
+  min-width: 100px;
+  font-family: Verdana;
+
+
+}
+
+
+
+nav#navNavegacao ul{
+  list-style: none;
+  padding: 0px;
+}
+
+nav#navNavegacao ul li a{
+    text-decoration: none;
+    color: #F3DAD5;
+    position: relative;
+    display: block;
+    background-color: hsla(0, 100%, 18%, 0.2);
+    width: 100%;
+    height: 100%;
+}
+
+nav#navNavegacao ul li > a{
+  background-color: transparent;
+}
+
+nav#navNavegacao ul li{
+
+  font-family: Verdana, Arial;
+  border: 5px groove;
+  border-left-color: red;
+  margin-top: 10px;
+
+  transition: border-left-color, 0.7s;
+  background-color: #888888;
+  cursor: pointer;
+
+}
+
+nav#navNavegacao ul li:hover{
+border-left-color: green;
+}
+
+nav#navNavegacao > h2, ul, li, a{
+  color: #F3DAD5;
+}
+
+.spanLink{
+  cursor:pointer;
+}
+
+.divExemploBorderRadius{
+  border: 3px groove;
+  margin-bottom: 5px;
+  height: 100px;
+  background-color:rgba(255, 0, 0, 0.5);
+}
+
+
+@keyframes giroAnimacaoEntrada {
+  0%{
+  transform: scale(100%);
+
+  }
+  50%{
+  transform: scale(110%);
+
+  }
+  100%{
+    transform: scale(100%);
+  }
+}
+
+
+.animacaoTrocaMenu{
+  animation-duration: 1s;
+  animation-name: giroAnimacaoEntrada;
+  animation-iteration-count: 1;
+}
+
+.menuDeTroca{
+  border-bottom: 5px outset white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+}
+
+
+
+.menuDeTroca li{
+  margin-bottom: 10px;
+}
+
+div#border-radiusTrinta{
+  border-radius: 30px;
+}
+
+div#border-radiusCinquenta{
+  border-radius: 50px;
+}
